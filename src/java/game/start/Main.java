@@ -39,7 +39,7 @@ public class Main {
 
         ImageIcon icon = new ImageIcon("img/button_normal.png");    //导入开始游戏按钮图片
         JButton button = new JButton(icon);    //创建开始游戏按钮
-        JButton button2 = new JButton("排行榜");
+        JButton button2 = new JButton("Ranking");
         button.setBounds(700 / 2 - icon.getIconWidth() + 25, 850 / 2 - icon.getIconHeight() + 50, icon.getIconWidth(), icon.getIconHeight());
         button.setContentAreaFilled(false);        //设置样式
         button.setBorderPainted(false);
@@ -49,7 +49,7 @@ public class Main {
         jp.add(button);    //在背景面板加入按钮
         jp.add(button2);
 
-        frame.setTitle("比奇堡之战");    //设置窗口标题
+        frame.setTitle("Battle of beechburg");    //设置窗口标题
         frame.setSize(width, height);    //设置窗口大小
         frame.setVisible(true);//设置窗口可见
         frame.setLocationRelativeTo(null);//设置窗口居中显示
@@ -84,7 +84,7 @@ public class Main {
                     }
                     Arrays.sort(range);        //数组排序
                     RangePanel r = new RangePanel();    //创建排行榜面板对象
-                    JButton buttonBack = new JButton("返回");
+                    JButton buttonBack = new JButton("Back");
                     buttonBack.setBounds(300, 700, 90, 40);
                     buttonBack.addActionListener(new ActionListener() {  //增加返回按钮事件监听
                         public void actionPerformed(ActionEvent e) {
@@ -105,7 +105,7 @@ public class Main {
         });
 
 
-        JButton b3 = new JButton("再玩一次"); //设置按钮
+        JButton b3 = new JButton("Again"); //设置按钮
         panel.setLayout(null);
         b3.setBounds(265, 455, 150, 50);
         b3.addActionListener(new ActionListener() {

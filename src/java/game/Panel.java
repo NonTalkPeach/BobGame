@@ -163,7 +163,7 @@ public class Panel extends JPanel implements MouseMotionListener {
         super.paint(g);
         g.setFont(new Font("", Font.BOLD, 30));
         g.drawImage(background.getImage(), 0, 0, null);
-        g.drawString("µÃ·Ö£º" + score, 10, 30);
+        g.drawString("Score: " + score, 10, 30);
         g.drawImage(plane.getImage(), planeX, planeY, null);
         if (score > 50) {
             g.drawString("BossHP:" + boss.HP, 500, 30);
